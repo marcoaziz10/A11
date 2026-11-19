@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David Brancaccio | San Joaquin Valley Town Hall</title>
+  <link rel="icon" href="../images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <header>
+    <img src="../images/town_hall_logo.gif" alt="Town Hall logo" height="80">
+    <h2>San Joaquin Valley Town Hall</h2>
+    <h3>Celebrating our <em class="large">75</em><sup>th</sup> Year</h3>
+  </header>
+  <!-- Navigation from A09 -->
+  <nav id="nav_menu" aria-label="Main navigation">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#guest-speakers">Speakers</a></li>
+      <li><a href="#">Luncheons</a></li>
+      <li><a href="../index.html#tickets">Tickets</a></li>
+      <li class="lastitem"><a href="#">About Us</a>
+        <ul>
+          <li><a href="#">Our History</a></li>
+          <li><a href="#">Board of Directors</a></li>
+          <li><a href="#">Past Speakers</a></li>
+          <li><a href="#">Contact Information</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div id="mobile_menu"></div>
+  <main>
+    <section class="speaker-content">
+      <h1>David Brancaccio</h1>
+      <h2>This page is under construction.</h2>
+    </section>
+    <aside id="guest-speakers">
+      <h2>Guest speakers</h2>
+      <h3>October<br><a href="../speakers/brancaccio.html">David Brancaccio</a></h3>
+      <img src="../images/brancaccio75.jpg" alt="David Brancaccio photo" width="75" height="75">
+      <h3>November<br><a href="../speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
+      <img src="../images/sorkin75.jpg" alt="Andrew Ross Sorkin photo" width="75" height="75">
+      <h3>January<br><a href="../speakers/chua.html">Amy Chua</a></h3>
+      <img src="../images/chua75.jpg" alt="Amy Chua photo" width="75" height="75">
+      <h3>February<br><a href="../speakers/sampson.html">Scott Sampson</a></h3>
+      <img src="../images/sampson75.jpg" alt="Scott Sampson photo" width="75" height="75">
+    </aside>
+  </main>
+  <footer>
+    <p>&copy; 2026 Marco Aziz &mdash; A11 Due Date: November 20, 2026</p>
+  </footer>
+  <!-- jQuery is used by the SlickNav mobile navigation plugin. -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#nav_menu').slicknav({
+        prependTo: '#mobile_menu',
+        label: 'MENU',
+        allowParentLinks: false
+      });
+    });
+  </script>
+</body>
+</html>
